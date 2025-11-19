@@ -6,13 +6,10 @@
 }
 
 body{
-    background-image: url(images/background.png);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-}
+    background: linear-gradient(to bottom right, #fff, #C8A97B, black, #FF004F);
 .container{
     padding: 10px 10%;
+}
 }
 nav{
     display: flex;
