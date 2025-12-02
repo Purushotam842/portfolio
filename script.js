@@ -1,5 +1,12 @@
+// Hamburger menu toggle
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("nav-links");
 
+burger.onclick = () => {
+  navLinks.classList.toggle("active");
+};
 
+// Typing effect
 const texts = ["Frontend Developer.", "MERN Stack Developer.", "IOT Developer."];
 let textIndex = 0;
 let charIndex = 0;
@@ -37,4 +44,18 @@ window.addEventListener("load", () => {
       fill.style.width = percent + "%";
     });
   });
+
+// Read More functionality
+const readMoreBtn = document.getElementById("read-more-btn");
+const fullAboutText = document.getElementById("full-about-text");
+
+readMoreBtn.addEventListener("click", () => {
+  if (fullAboutText.style.display === "none") {
+    fullAboutText.style.display = "block";
+    readMoreBtn.textContent = "Read Less";
+  } else {
+    fullAboutText.style.display = "none";
+    readMoreBtn.textContent = "Read More";
+  }
+});
   

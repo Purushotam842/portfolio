@@ -10,16 +10,23 @@
 <body>
 <div id="home">
     <div class="container">
-        <nav>
-            <h2 class="logo"><span class="red-p">P</span>urushotam</h2>
-            <ul>
-                <li><a href="#home"><span>H</span>ome</a></li>
-                <li><a href="#about"><span>A</span>bout Me</a></li>
-                <li><a href="#skills"><span>S</span>kills</a></li>
-                <li><a href="#projects"><span>P</span>rojects</a></li>
-                <li><a href="#contact"><span>C</span>ontact Us</a></li>
-            </ul>
-        </nav>
+        <header>
+            <a href="#home" class="logo"><div><span>P</span>urushotam</div></a>
+
+                 <div class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                 </div>
+
+                <nav class="nav-links" id="nav-links">
+                    <a href="#home"><span>H</span>ome</a>
+                    <a href="#about"><span>A</span>bout</a>
+                    <a href="#skills"><span>S</span>kills</a>
+                    <a href="#projects"><span>P</span>rojects</a>
+                    <a href="#contact"><span>C</span>ontact</a>
+                </nav>
+        </header>
         <div class="row">
             <div class="header-text">
                 <h1>Hi I'm <span>Purushotam</span>Kumar</h1>
@@ -50,9 +57,9 @@
             </div>
             <div class="about-col-2 A">
                 <h1 class="sub-title"><span class="red-p">About</span> Me</h1>
-                <p>Hello everyone, I am Purushotam Kumar, a dedicated B-Tech student from Bihar, India. My journey in technology began with a passion for creating innovative solutions that bridge the gap between ideas and reality. As a full-stack developer, I specialize in building dynamic and responsive web applications using a variety of technologies.
-
-                On the frontend, I excel in HTML, CSS, Bootstrap, JavaScript, and React, creating intuitive and engaging user interfaces that provide seamless user experiences. For the backend, I work with JAVA, Node.js, Python, MySQL, and MongoDB to develop robust server-side logic, manage databases, and ensure scalable and efficient applications.
+                <p id="about-text">Hello everyone, I am Purushotam Kumar, a dedicated B-Tech student from Bihar, India. My journey in technology began with a passion for creating innovative solutions that bridge the gap between ideas and reality. As a full-stack developer, I specialize in building dynamic and responsive web applications using a variety of technologies.</p>
+                <button id="read-more-btn" class="read-more-btn">Read More</button>
+                <p id="full-about-text" style="display: none;">On the frontend, I excel in HTML, CSS, Bootstrap, JavaScript, and React, creating intuitive and engaging user interfaces that provide seamless user experiences. For the backend, I work with JAVA, Node.js, Python, MySQL, and MongoDB to develop robust server-side logic, manage databases, and ensure scalable and efficient applications.
 
                 Throughout my academic career, I have immersed myself in computer science, focusing on web development, mobile app development, and UI/UX design. I believe in the power of technology to transform lives, and I strive to contribute to projects that make a positive impact on society.
 
@@ -186,7 +193,7 @@
         <h1 class="sub-title"><span class="red-p">Contact</span> Me</h1>
         <div class="row">
             <div class="contact-col">
-                <h3>Get In Touch</h3>
+               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxawp_hmWklc_gtyUmm11D9LefLzqNJO0pG0RYf0bItexGhg/viewform?usp=dialog"> <button id="get-in-touch-btn" >Get In Touch</button></a>
                 <p>Feel free to reach out for collaborations or just a friendly chat!</p>
                 <ul>
                     <li><span>Email:</span> purushotamkumar842@gmail.com</li>
@@ -199,12 +206,18 @@
                     <input type="text" placeholder="Your Name" required>
                     <input type="email" placeholder="Your Email" required>
                     <textarea placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
+                    <button type="submit" class="sub">Send Message</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 ❤️ Purushotam Kumar. All rights reserved.</p>
+</footer>
+
 <script src="script.js"></script>
 </body>
 </html>
